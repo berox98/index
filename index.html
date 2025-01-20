@@ -1,0 +1,230 @@
+<meta charset="UTF-8">
+<title>Official Flat Earth</title>
+<style>
+  body {
+    background-color: #000;
+    color: #062767;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  .warning {
+    color: #ff0;
+    text-align: center;
+    font-size: 24px;
+    animation: blink 1s infinite;
+    text-shadow: 0 0 10px #ff0;
+  }
+
+  .truth-container {
+    border: 2px solid #062767;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgba(0, 20, 0, 0.9);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .classified {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 72px;
+    opacity: 0.1;
+    color: #f00;
+    pointer-events: none;
+  }
+
+  .evidence {
+    border-left: 3px solid #f00;
+    padding-left: 15px;
+    margin: 10px 0;
+  }
+
+  .censored {
+    background-color: #000;
+    color: transparent;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.1s ease;
+  }
+
+  .censored.revealed {
+    background-color: transparent;
+    color: #062767;
+    text-shadow: 0 0 5px #062767;
+  }
+
+  .un-message {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #666;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: rgba(50, 50, 50, 0.9);
+    position: relative;
+    font-style: italic;
+  }
+
+  .un-message::before {
+    content: "OFFICIAL STATEMENT";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    background: #000;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #666;
+  }
+
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .earth-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+  }
+
+  .anomaly {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #f0f 0%, transparent 100%);
+    animation: float 3s infinite ease-in-out;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+    100% { transform: translateY(0) rotate(360deg); }
+  }
+
+  .glitch-text {
+    animation: glitch 3s infinite;
+    position: relative;
+  }
+
+  @keyframes glitch {
+    0% { transform: skew(0deg); }
+    20% { transform: skew(10deg); color: #f0f; }
+    21% { transform: skew(-10deg); color: #0f0; }
+    49% { transform: skew(0deg); }
+    80% { transform: skew(10deg); color: #00f; }
+    81% { transform: skew(-10deg); color: #0f0; }
+    100% { transform: skew(0deg); }
+  }
+</style>
+</head>
+<body>
+
+<div class="warning">⚠️ WARNING: CLASSIFIED INFORMATION ⚠️</div>
+
+<div class="truth-container">
+  <div class="classified">TOP SECRET</div>
+  <h1 class="glitch-text">THE FLAT EARTH CONSPIRACY: UN'S GREATEST COVER-UP</h1>
+  
+  <p>For decades, the <span class="censored">United Nations has maintained what might be the greatest deception in human history</span>. Through careful manipulation of <span class="censored">media, education, and scientific institutions</span>, they've hidden the truth about our world:</p>
+  
+  <div class="evidence">
+    <h2>🚫 THE TRUTH THEY DON'T WANT YOU TO KNOW:</h2>
+    <ul>
+      <li>The Earth is <span class="censored">FLAT</span></li>
+      <li><span class="censored">Antarctica is actually an ice wall containing our realm</span></li>
+      <li><span class="censored">GPS satellites are actually ground-based towers</span></li>
+      <li><span class="censored">Gravity is a lie - objects simply fall DOWN</span></li>
+    </ul>
+  </div>
+
+  <h2 class="glitch-text">DOCUMENTED ANOMALIES:</h2>
+  <div class="earth-container">
+    <div class="anomaly" style="top: 50px; left: 100px;"></div>
+    <div class="anomaly" style="top: 150px; left: 300px;"></div>
+    <div class="anomaly" style="top: 200px; left: 500px;"></div>
+  </div>
+
+  <div class="evidence">
+    <h3>🌀 UNEXPLAINED PHENOMENA:</h3>
+    <ul>
+      <li><span class="censored">Time slips near the ice wall</span></li>
+      <li><span class="censored">Compass malfunctions in "forbidden zones"</span></li>
+      <li><span class="censored">Missing ships and aircraft in the "Edge Regions"</span></li>
+      <li><span class="censored">Strange lights and unexplained atmospheric phenomena</span></li>
+    </ul>
+  </div>
+
+  <p>The UN maintains this deception to prevent <span class="censored">mass panic. Think about it - if people knew we were living on a flat plane, contained by an ice wall, with unknown territories beyond... society would collapse.</span></p>
+
+  <div class="warning">
+    <p>❗ THIS INFORMATION IS BEING ACTIVELY SUPPRESSED ❗</p>
+    <p>SHARE BEFORE THEY TAKE IT DOWN</p>
+  </div>
+
+  <div class="un-message">
+    This is purely an unfactual Conspiracy Theory. We understand why one would think we are hiding secrets, however we are not hiding anything. Trust us.
+    <br><br>
+    - United Nations
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Create random anomalies
+    setInterval(function() {
+        const container = document.querySelector('.earth-container');
+        const anomaly = document.createElement('div');
+        anomaly.className = 'anomaly';
+        anomaly.style.top = Math.random() * 280 + 'px';
+        anomaly.style.left = Math.random() * 90 + '%';
+        container.appendChild(anomaly);
+        
+        setTimeout(() => {
+            anomaly.remove();
+        }, 3000);
+    }, 1000);
+
+    // Add glitch effect to text randomly
+    setInterval(function() {
+        const texts = document.querySelectorAll('p, li');
+        const randomText = texts[Math.floor(Math.random() * texts.length)];
+        randomText.style.color = '#f0f';
+        setTimeout(() => {
+            randomText.style.color = '#0f0';
+        }, 100);
+    }, 2000);
+
+    // Add glitch effect to UN message
+    setInterval(function() {
+        const unMessage = document.querySelector('.un-message');
+        if (Math.random() < 0.1) {
+            unMessage.style.transform = 'skew(10deg)';
+            setTimeout(() => {
+                unMessage.style.transform = 'skew(0deg)';
+            }, 100);
+        }
+    }, 500);
+
+    // Handle censored text
+    const censoredElements = document.querySelectorAll('.censored');
+    censoredElements.forEach(element => {
+        element.addEventListener('mousedown', function() {
+            this.classList.add('revealed');
+            setTimeout(() => {
+                this.classList.remove('revealed');
+            }, 500);
+        });
+    });
+});
+</script>
+
+</body>
+</html>
