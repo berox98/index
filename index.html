@@ -1,0 +1,335 @@
+<title>Official Anomaly</title>
+<style>
+  body {
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #c300ff;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  h1, h2 {
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000;
+  }
+  .station {
+    border: 1px solid #e100ff;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 255, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+  }
+  .station h3 {
+    margin-top: 0;
+    color: #ffff00;
+  }
+  .station-content {
+    flex-grow: 1;
+  }
+  .station-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+    image-rendering: pixelated;
+  }
+  .freq {
+    font-weight: bold;
+    color: #00ffff;
+  }
+  .anomaly {
+    color: #ff00ff;
+    font-style: italic;
+  }
+  #ticker {
+    background-color: #0000ff;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  #ticker span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 60s linear infinite;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  a {
+    color: #f700ff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .listen-btn {
+    background-color: #d400ff;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .listen-btn:hover {
+    background-color: #9c00cc;
+  }
+  .info-box {
+    background-color: rgba(0, 255, 0, 0.1);
+    color: #ff00ea;
+    border: 1px solid #ff00ff;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
+  }
+  .next-page {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .next-page a {
+    display: inline-block;
+    background-color: #00ff00;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .next-page a:hover {
+    background-color: #00cc00;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Official Anomaly Database</h1>
+  <div class="info-box">
+    Please allow the page to load fully before attempting to listen to the stations. Your patience ensures optimal anomaly reception.
+  </div>
+  <p>Welcome to the official database of anomalous number station broadcasts. The following entries document unexplained phenomena associated with various shortwave radio transmissions.</p>
+  
+  <h2>Recent Anomalies</h2>
+  
+  <div class="station">
+    <img class="station-image" src="https://numberstations.anomaly/images/whisperer.gif" alt="A dithered image of a ghostly face whispering" width="100" height="100">
+    <div class="station-content">
+      <h3>The Whisperer (XKY-99)</h3>
+      <p><span class="freq">3724 kHz</span></p>
+      <p>Usually transmits a faint, breathy whisper counting prime numbers. <span class="anomaly">On 2023-06-15, the station abruptly switched to a clear, resonant voice that recited a string of apparently random words. Listeners reported feeling an inexplicable sense of dread during the broadcast.</span></p>
+      <p><a href="https://numberstations.anomaly/station/xky99">More details</a></p>
+      <button class="listen-btn" onclick="toggleAudio('whisperer')">Listen to XKY-99</button>
+    </div>
+  </div>
+  
+  <div class="station">
+    <img class="station-image" src="https://numberstations.anomaly/images/cosmic_pulsar.gif" alt="A dithered image of a pulsating star" width="100" height="100">
+    <div class="station-content">
+      <h3>Cosmic Pulsar</h3>
+      <p><span class="freq">8102 kHz</span></p>
+      <p>Normally broadcasts a series of rhythmic pulses that match no known celestial object. <span class="anomaly">During a transmission on 2023-05-22, the pulses suddenly aligned with the rotational period of a pulsar 12,000 light-years away, which had just been discovered by astronomers. The station then fell silent for exactly 12,000 seconds.</span></p>
+      <p><a href="https://numberstations.anomaly/station/cosmic-pulsar">More details</a></p>
+      <button class="listen-btn" onclick="toggleAudio('cosmic')">Listen to Cosmic Pulsar</button>
+    </div>
+  </div>
+  
+  <div class="station">
+    <img class="station-image" src="https://numberstations.anomaly/images/fibonacci.gif" alt="A dithered image of a spiral resembling the Fibonacci sequence" width="100" height="100">
+    <div class="station-content">
+      <h3>The Fibonacci Sequence (FS-21)</h3>
+      <p><span class="freq">5813 kHz</span></p>
+      <p>Consistently broadcasts the Fibonacci sequence, one number every hour. <span class="anomaly">On 2023-07-01, after reaching the 21st Fibonacci number, the station began broadcasting a new sequence. Mathematicians are still trying to decipher its pattern, but preliminary analysis suggests it might be predicting prime number discoveries years in advance.</span></p>
+      <p><a href="https://numberstations.anomaly/station/fs21">More details</a></p>
+      <button class="listen-btn" onclick="toggleAudio('fibonacci')">Listen to FS-21</button>
+    </div>
+  </div>
+
+  <div class="station">
+    <img class="station-image" src="https://numberstations.anomaly/images/fractal_hum.gif" alt="A dithered image of a Mandelbrot set" width="100" height="100">
+    <div class="station-content">
+      <h3>The Fractal Hum (FH-42)</h3>
+      <p><span class="freq">6282 kHz</span></p>
+      <p>Emits a continuous hum that, when visualized as a spectrogram, forms intricate fractal patterns. <span class="anomaly">Researchers noticed that the fractal patterns started to match geographical features of newly discovered exoplanets mere days before their official announcements.</span></p>
+      <p><a href="https://numberstations.anomaly/station/fh42">More details</a></p>
+      <button class="listen-btn" onclick="toggleAudio('fractal')">Listen to FH-42</button>
+    </div>
+  </div>
+
+  <div class="station">
+    <img class="station-image" src="https://numberstations.anomaly/images/quantum_chirper.gif" alt="A dithered image of quantum waves" width="100" height="100">
+    <div class="station-content">
+      <h3>The Quantum Chirper (QC-7)</h3>
+      <p><span class="freq">9417 kHz</span></p>
+      <p>Broadcasts seemingly random chirps and beeps. <span class="anomaly">Quantum physicists have reported that the station's transmissions eerily correlate with quantum fluctuations in their experiments, sometimes predicting outcomes before they occur.</span></p>
+      <p><a href="https://numberstations.anomaly/station/qc7">More details</a></p>
+      <button class="listen-btn" onclick="toggleAudio('quantum')">Listen to QC-7</button>
+    </div>
+  </div>
+  
+  <div class="next-page">
+    <a href="https://numberstations.anomaly/?page=2">Next Page &raquo;</a>
+  </div>
+  
+  <h2>Submit an Anomaly</h2>
+  <p>Have you encountered an unexplained broadcast? <a href="https://numberstations.anomaly/submit">Report it here</a>.</p>
+  
+  <div id="ticker">
+    <span>XKY-99 broadcasting in reverse... Cosmic Pulsar emitting gamma frequencies... FH-42 fractal matches Mars terrain... QC-7 predicts particle decay... The Whisperer recites prime factors of recently discovered Mersenne prime... Fibonacci Sequence transmits coordinates of uncharted deep-sea anomaly... Fractal Hum patterns align with newly observed galactic superstructures... Quantum Chirper temporarily stabilizes quantum entanglement over vast distances...</span>
+  </div>
+  </div>
+
+<script>
+  // Audio functionality
+  let audioContext;
+  const sources = {};
+
+  function initAudio() {
+    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+  }
+
+  function generateWhisperSound(time) {
+    const intensity = 0.01 + Math.sin(time * 0.1) * 0.005;
+    let sample = (Math.random() - 0.5) * intensity;
+    
+    if (Math.random() < 0.0001) {
+      const prime = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37][Math.floor(Math.random() * 12)];
+      sample = Math.sin(time * prime) * 0.1;
+    }
+    
+    return sample;
+  }
+
+  function generatePulsarSound(time) {
+    const pulseFrequency = 0.1 + Math.sin(time * 0.01) * 0.05;
+    let sample = Math.sin(time * pulseFrequency) > 0.9 ? 0.1 : 0;
+    
+    if (Math.random() < 0.0001) {
+      sample = Math.random() * 0.05;
+    }
+    
+    return sample;
+  }
+
+  function generateFibonacciSound(time) {
+    const fibNumbers = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
+    const index = Math.floor(time / 10000) % fibNumbers.length;
+    const currentNumber = fibNumbers[index];
+    
+    let sample = 0;
+    if (time % 10000 < 100) {
+      sample = Math.sin(time * 0.1) * 0.1;
+    }
+    
+    if (Math.random() < 0.0001) {
+      sample = Math.sin(time * 0.1) * 0.1;
+    }
+    
+    return sample;
+  }
+
+  function generateFractalSound(time) {
+    const baseFreq = 440;
+    let sample = 0;
+    for (let i = 1; i <= 5; i++) {
+      sample += Math.sin(time * baseFreq / (i * i)) / i;
+    }
+    sample *= 0.1;
+    
+    // Add occasional "glitch"
+    if (Math.random() < 0.0005) {
+      sample *= (Math.random() + 0.5);
+    }
+    
+    return sample;
+  }
+
+  function generateQuantumSound(time) {
+    const chirpFreq = 1000 + Math.sin(time * 0.001) * 500;
+    let sample = 0;
+    
+    if (Math.random() < 0.05) {
+      sample = Math.sin(time * chirpFreq) * 0.1;
+    }
+    
+    // Add quantum "jumps"
+    if (Math.random() < 0.001) {
+      sample = (Math.random() - 0.5) * 0.2;
+    }
+    
+    return sample;
+  }
+
+  function createProceduralSource(generator) {
+    if (!audioContext) {
+      initAudio();
+    }
+
+    const bufferSize = 4096;
+    const node = audioContext.createScriptProcessor(bufferSize, 1, 1);
+    let time = 0;
+
+    node.onaudioprocess = function(e) {
+      const output = e.outputBuffer.getChannelData(0);
+      for (let i = 0; i < bufferSize; i++) {
+        output[i] = generator(time);
+        time++;
+      }
+    };
+
+    return node;
+  }
+
+  function toggleAudio(stationId) {
+    const btn = document.querySelector(`button[onclick="toggleAudio('${stationId}')"]`);
+    
+    if (sources[stationId]) {
+      sources[stationId].disconnect();
+      sources[stationId] = null;
+      btn.textContent = `Listen to ${getStationName(stationId)}`;
+    } else {
+      let source;
+      switch(stationId) {
+        case 'whisperer':
+          source = createProceduralSource(generateWhisperSound);
+          break;
+        case 'cosmic':
+          source = createProceduralSource(generatePulsarSound);
+          break;
+        case 'fibonacci':
+          source = createProceduralSource(generateFibonacciSound);
+          break;
+        case 'fractal':
+          source = createProceduralSource(generateFractalSound);
+          break;
+        case 'quantum':
+          source = createProceduralSource(generateQuantumSound);
+          break;
+      }
+      source.connect(audioContext.destination);
+      sources[stationId] = source;
+      btn.textContent = 'Stop listening';
+    }
+  }
+
+  function getStationName(stationId) {
+    switch(stationId) {
+      case 'whisperer': return 'XKY-99';
+      case 'cosmic': return 'Cosmic Pulsar';
+      case 'fibonacci': return 'FS-21';
+      case 'fractal': return 'FH-42';
+      case 'quantum': return 'QC-7';
+      default: return stationId;
+    }
+  }
+</script>
