@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$DELROY</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="desktop">
+    <!-- <img src="/trumpcoin.png" class="desktop-overlay" alt="Overlay"> -->
+    <div id="startup-screen">
+        <div class="startup-logo" style="
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            padding: 30px;
+            margin-bottom: 20px;
+        ">
+            <svg width="200" height="200" viewBox="0 0 200 200">
+                <defs>
+                    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#009903;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#009903;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="90" fill="url(#aiGradient)"/>
+                <text x="100" y="120" text-anchor="middle" fill="white" font-size="35">$DELROY</text>
+            </svg>
+        </div>
+        <h1 style="
+            font-size: 48px; 
+            margin-bottom: 30px; 
+            color: white; 
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+            letter-spacing: 1px;
+            font-weight: bold;
+        ">$DELROY Official System</h1>
+        <div class="progress-container" style="
+            width: 300px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 20px;
+        ">
+            <div class="progress-bar" style="
+                width: 0%;
+                height: 20px;
+                background: linear-gradient(90deg, #009903, #006602);
+                transition: width 1s ease-in-out;
+            "></div>
+        </div>
+        <div id="loading-text" style="
+            margin-top: 25px;
+            font-size: 20px;
+            opacity: 0.9;
+            color: rgba(255,255,255,0.8);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        "></div>
+    </div>
+
+    <div class="icon-parent">
+
+        <div class="icon" onclick="window.open('https://pump.fun/board', '_blank')">
+            <img src="pumpfunlogo.png" 
+                 alt="pumpfun"
+                 width="32" 
+                 height="32" 
+                 style="object-fit: contain;">
+            <div>INVEST</div>
+        </div>
+
+        <div class="icon" onclick="window.open('https://pump.fun/board', '_blank')">
+            <img src="dexlogo.png" 
+                 alt="dex"
+                 width="32" 
+                 height="32" 
+                 style="object-fit: contain;">
+            <div>DEX</div>
+        </div>
+
+        <div class="icon" onclick="window.open('https://twitter.com', '_blank')">
+            <img src="twitter.jpg" 
+                 alt="Twitter"
+                 width="32" 
+                 height="32" 
+                 style="object-fit: contain;">
+            <div>Twitter</div>
+        </div>
+        
+        <!-- Telegram Icon -->
+        <div class="icon" onclick="window.open('https://telegram.org', '_blank')">
+            <img src="/telegram.jpg" 
+                 alt="Telegram"
+                 width="32" 
+                 height="32" 
+                 style="object-fit: contain;">
+            <div>Telegram</div>
+        </div>
+
+        <div class="icon" onclick="window.open('https://x.com/realDonaldTrump', '_blank')">
+            <img src="https://pbs.twimg.com/profile_images/874276197357596672/kUuht00m_400x400.jpg" 
+                 alt="Trump"
+                 width="32" 
+                 height="32" 
+                 style="object-fit: contain;">
+            <div>Trump</div>
+        </div>
+
+        <div class="icon" onclick="window.open('https://www.tesla.com/', '_blank')">
+            <img src="https://e7.pngegg.com/pngimages/926/415/png-clipart-tesla-logo-tesla-icon-electric-vehicles-thumbnail.png" 
+                 alt="Tesla"
+                 width="32" 
+                 height="32" 
+                 style="object-fit: contain;">
+            <div>Tesla</div>
+        </div>
+    
+
+        <div class="icon" onclick="window.open('https://x.com/LeaoPatriotico/status/1881460679577854210', '_blank')">
+            <img src="meme.png" 
+                 alt="Meme"
+                 width="32" 
+                 height="32" 
+                 style="object-fit: contain;">
+            <div>Meme</div>
+        </div>
+
+        <div class="icon" onclick="window.open('https://cornhub.website/', '_blank')">
+            <img src="https://preview.redd.it/6g7g0fn2msu51.png?auto=webp&s=eb48b17a7c68fc474dc34731a1b69910671bab62" 
+                 alt="CornHub"
+                 width="32" 
+                 height="32" 
+                 style="object-fit: contain;">
+            <div>CornHub</div>
+        </div>
+        
+        <div class="icon" onclick="window.open('https://www.only-men.com/', '_blank')">
+            <img src="onlymen.png" 
+                 alt="OnlyMen"
+                 width="32" 
+                 height="32" 
+                 style="object-fit: contain;">
+            <div>OnlyMen</div>
+        </div>
+    
+        <div class="icon" onclick="openWindow('control-panel')">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+                <rect x="4" y="4" width="24" height="24" rx="2" fill="#34495e"/>
+                <path d="M16 8h8M8 16h8M8 24h8" stroke="#ffffff" stroke-width="2"/>
+                <circle cx="16" cy="16" r="3" fill="#ffffff"/>
+            </svg>
+            <div>Control Panel</div>
+        </div>
+    
+        <div class="icon" onclick="window.open('https://www.google.com', '_blank')">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732205.png" 
+                 alt="DeepWeb"
+                 width="32" 
+                 height="32" 
+                 style="object-fit: contain;">
+            <div>DEEP WEB</div>
+        </div>
+    
+        <div class="icon" onclick="window.open('https://www.silvergames.com/en/t/trump', '_blank')">
+            <img src="trumpgames.png" 
+                 alt="TrumpGames"
+                 width="32" 
+                 height="32" 
+                 style="object-fit: contain;">
+            <div>Trump Games</div>
+        </div>
+    
+        <div class="icon" onclick="openWindow('skype')">
+            <svg width="32" height="32" viewBox="0 0 32 32">
+                <circle cx="16" cy="16" r="14" fill="#00a6ff"/>
+                <circle cx="16" cy="16" r="8" fill="white"/>
+                <circle cx="16" cy="16" r="4" fill="#00a6ff"/>
+            </svg>
+            <div>$DELROY Chat 1.0</div>
+        </div>
+    </div>
+
+    <div class="taskbar hidden">
+        <div class="start-button" onclick="toggleStartMenu()">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <rect width="24" height="24" fill="transparent"/>
+                <rect x="4" y="4" width="16" height="16" fill="#4a90e2" rx="2"/>
+                <path d="M8 8h8M8 12h8M8 16h8" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Start
+        </div>
+        <div class="start-menu" id="start-menu" style="display: none;">
+            <div class="start-menu-section">
+                <div class="start-menu-section-title">Pinned</div>
+                <div class="start-menu-item" onclick="openWindow('browser')">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="#0078d4"/><text x="12" y="16" text-anchor="middle" fill="white" font-size="12">E</text></svg>
+                    Internet
+                </div>
+                <div class="start-menu-item" onclick="openWindow('astimail')">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" fill="#4a90e2"/><path d="M2 8l10 6 10-6" stroke="white" fill="none"/></svg>
+                    $DELROY Mail
+                </div>
+            </div>
+            
+            <div class="start-menu-separator"></div>
+            
+            <div class="start-menu-section">
+                <div class="start-menu-section-title">All Apps</div>
+                <div class="start-menu-item" onclick="openWindow('games')">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="#e44d26"/><circle cx="12" cy="12" r="4" fill="white"/></svg>
+                    Games
+                </div>
+                <div class="start-menu-item" onclick="openWindow('paint')">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="#107c10"/><path d="M8 12s2-2 4-2 4 2 4 2" stroke="white" stroke-width="2" fill="none"/></svg>
+                    $DELROY Paint
+                </div>
+                <div class="start-menu-item" onclick="openWindow('calculator')">
+                    <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" fill="#5c2d91"/><path d="M7 12h10M7 8h10M7 16h8" stroke="white" stroke-width="2"/></svg>
+                    Calculator
+                </div>
+                <div class="start-menu-item" onclick="openWindow('terminal')">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="#333"/><path d="M6 12h12M6 8h12M6 16h8" stroke="white" strokeWidth="2"/></svg>
+                    Terminal
+                </div>
+            </div>
+            
+            <div class="start-menu-separator"></div>
+            
+            <div class="start-menu-section">
+                <div class="start-menu-item" onclick="openWindow('control-panel')">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="#666"/><path d="M12 16v-3M12 8h.01" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+                    Settings
+                </div>
+            </div>
+            
+            <div class="start-menu-bottom">
+                <div class="start-menu-user">
+                    <div class="start-menu-user-avatar" style="background: #4a90e2; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">U</div>
+                    <div>
+                        <div style="font-weight: 500;">User</div>
+                        <div style="font-size: 12px; opacity: 0.7;">$DELROY-PC</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="flex: 1"></div>
+        <div class="ai-taskbar-button" onclick="toggleAISidebar()" style="display: flex; align-items: center; padding: 8px 16px; color: white; cursor: pointer;">
+            <svg width="24" height="24" viewBox="0 0 24 24" style="margin-right: 8px;">
+                <circle cx="12" cy="12" r="10" fill="#4a90e2"/>
+                <text x="12" y="16" text-anchor="middle" fill="white" font-size="12">AI</text>
+            </svg>
+        </div>
+        <div class="clock" id="clock">00:00</div>
+    </div>
+
+    <div class="window" id="my-computer">
+        <div class="title-bar">
+            <div>My Computer</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('my-computer')">−</button>
+                <button class="close-button" onclick="closeWindow('my-computer')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            Welcome to $DELROY!
+            <br><br>
+            This version includes experimental features.
+            <br>
+            Some features may not work as expected.
+        </div>
+    </div>
+
+    <div class="window" id="control-panel" style="width: 400px;">
+        <div class="title-bar">
+            <div>Control Panel</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('control-panel')">−</button>
+                <button class="close-button" onclick="closeWindow('control-panel')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <h3 style="font-size: 24px; margin-bottom: 20px;">Control Panel</h3>
+            
+            <div class="control-panel-section">
+                <h4>
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="#4a90e2"/>
+                        <path d="M12 16v-3M12 8h.01" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    System Information
+                </h4>
+                <div class="control-panel-item">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2" fill="#4a90e2"/>
+                        <path d="M12 6v12M6 12h12" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <div>
+                        <div>System Properties</div>
+                        <div class="control-panel-item-description">View system information and change settings</div>
+                    </div>
+                </div>
+                <div class="control-panel-item">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="8" fill="#4a90e2"/>
+                        <path d="M12 8v8M8 12h8" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <div>
+                        <div>About $DELROY</div>
+                        <div class="control-panel-item-description">View version information and system details</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-panel-section">
+                <h4>
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2" fill="#2ecc71"/>
+                        <path d="M8 12s2-2 4-2 4 2 4 2" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                    Appearance
+                </h4>
+                <div class="theme-selector">
+                    <label>Theme:</label>
+                    <select id="theme-selector">
+                        <option value="default">Default Theme</option>
+                        <option value="classic">Classic Theme</option>
+                    </select>
+                </div>
+                <div class="control-panel-item">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2" fill="#2ecc71"/>
+                        <path d="M7 12h10M7 8h10M7 16h10" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <div>
+                        <div>Desktop Settings</div>
+                        <div class="control-panel-item-description">Change wallpaper and desktop icons</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-panel-section" id="profile-section">
+                <h4>
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" fill="#4a90e2"/>
+                        <path d="M12 8v8M8 12h8" stroke="white" stroke-width="2"/>
+                    </svg>
+                    User Profile
+                </h4>
+                <div id="profile-content" style="text-align: center; margin: 20px 0;">
+                    <img id="profile-avatar" style="width: 100px; height: 100px; border-radius: 50%;" alt="User avatar">
+                    <div style="margin: 20px 0;">
+                        <p><strong>Username:</strong> <span id="profile-username"></span></p>
+                        <p><strong>Created:</strong> <span id="profile-created"></span></p>
+                        <p><strong>Description:</strong> <span id="profile-description"></span></p>
+                        <p><strong>Twitter:</strong> <span id="profile-twitter"></span></p>
+                        <p><strong>Discord:</strong> <span id="profile-discord"></span></p>
+                    </div>
+                    <div style="border-top: 1px solid #808080; padding-top: 10px;">
+                        <p><strong>System:</strong> $DELROY</p>
+                        <p><strong>Install Date:</strong> <span id="profile-install-date"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-panel-section">
+                <h4>
+                    <svg width="24" height="24" viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2" fill="#e74c3c"/>
+                        <circle cx="12" cy="12" r="5" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                    System Tools
+                </h4>
+                <div class="control-panel-item">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2" fill="#e74c3c"/>
+                        <path d="M12 8v8M8 12h8" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <div>
+                        <div>Add/Remove Programs</div>
+                        <div class="control-panel-item-description">Install or uninstall applications</div>
+                    </div>
+                </div>
+                <div class="control-panel-item">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2" fill="#e74c3c"/>
+                        <circle cx="12" cy="12" r="5" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                    <div>
+                        <div>Network Settings</div>
+                        <div class="control-panel-item-description">Configure network connections</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="notepad">
+        <div class="title-bar">
+            <div>Notepad</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('notepad')">−</button>
+                <button class="close-button" onclick="closeWindow('notepad')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="notepad-content">
+                <div class="notepad-toolbar">
+                    <button class="notepad-btn" onclick="newNotepadFile()">
+                        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg>
+                        New
+                    </button>
+                    <button class="notepad-btn" onclick="saveNotepadFile()">
+                        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M15,9H5C3.89,9 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V7L15,3M17,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V7L17,3Z"/></svg>
+                        Save
+                    </button>
+                    <button class="notepad-btn" onclick="copyNotepadText()">
+                        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19,21H8V7H19V21M19,5H8C6.89,5 6,5.89 6,7V21C6,22.1 6.9,23 8,23H19C20.1,23 21,22.1 21,21V7C21,5.89 20.1,5 19,5Z"/></svg>
+                        Copy
+                    </button>
+                    <button class="notepad-btn" onclick="pasteNotepadText()">
+                        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z"/></svg>
+                        Paste
+                    </button>
+                </div>
+                <textarea class="notepad-textarea" id="notepad-textarea">Welcome to $DELROY Notepad!
+
+A modern text editor for all your note-taking needs.</textarea>
+                <div class="notepad-status">
+                    <span id="notepad-wordcount">Words: 0</span>
+                    <span id="notepad-charcount">Characters: 0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="explorer">
+        <div class="title-bar">
+            <div>Explorer</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('explorer')">−</button>
+                <button class="close-button" onclick="closeWindow('explorer')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div style="display: flex; height: 400px;">
+                <div class="explorer-sidebar">
+                    <div class="explorer-item active">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="2" fill="#4a90e2"/>
+                            <rect x="6" y="6" width="12" height="12" fill="white"/>
+                        </svg>
+                        Desktop
+                    </div>
+                    <div class="explorer-item">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="2" fill="#2ecc71"/>
+                            <path d="M6 12h12M12 6v12" stroke="white" stroke-width="2"/>
+                        </svg>
+                        Documents
+                    </div>
+                    <div class="explorer-item">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="2" fill="#e74c3c"/>
+                            <circle cx="12" cy="12" r="6" fill="white"/>
+                        </svg>
+                        Downloads
+                    </div>
+                    <div class="explorer-item">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="2" fill="#f1c40f"/>
+                            <path d="M8 12h8M8 8h8M8 16h8" stroke="white" stroke-width="2"/>
+                        </svg>
+                        Pictures
+                    </div>
+                    <div class="explorer-item">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="2" fill="#9b59b6"/>
+                            <path d="M12 8v8M8 12h8" stroke="white" stroke-width="2"/>
+                        </svg>
+                        Music
+                    </div>
+                </div>
+                <div class="explorer-main">
+                    <div class="explorer-empty">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="2" fill="#ccc"/>
+                            <path d="M12 8v8M8 12h8" stroke="white" stroke-width="2"/>
+                        </svg>
+                        <div>This folder is empty</div>
+                        <div style="font-size: 13px; opacity: 0.7;">Drag and drop files here or use the Add button</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="games" style="width: 300px;">
+        <div class="title-bar">
+            <div>Games</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('games')">−</button>
+                <button class="close-button" onclick="closeWindow('games')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <h3>Minesweeper</h3>
+            <div class="game-grid" id="minesweeper">
+                <!-- Grid will be filled by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="3d-game" style="width: 400px; height: 350px;">
+        <div class="title-bar">
+            <div>3D Shooter Beta</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('3d-game')">−</button>
+                <button class="close-button" onclick="closeWindow('3d-game')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div style="padding: 5px; background: #808080;">
+                <button onclick="startDemo3DGame()">Start Demo</button>
+                <button onclick="pauseDemo3DGame()">Pause</button>
+                <span style="float: right;">FPS: <span id="fps-counter">0</span></span>
+            </div>
+            <canvas id="game-canvas" width="380" height="260" style="background: #000; margin: 5px;"></canvas>
+            <div style="padding: 5px; text-align: center; background: #c0c0c0;">
+                <b>3D Shooter Beta Demo</b><br>
+                Coming in $DELROY!<br>
+                Use arrow keys to move, space to shoot
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="browser" style="width: 400px;">
+        <div class="title-bar">
+            <div>$DELROY Browser Beta</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('browser')">−</button>
+                <button class="close-button" onclick="closeWindow('browser')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="browser-bar">
+                <button onclick="alert('Not implemented in beta')">Back</button>
+                <button onclick="alert('Not implemented in beta')">Forward</button>
+                <button onclick="alert('Not implemented in beta')">Refresh</button>
+                <input type="text" class="browser-input" placeholder="Enter URL..." value="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            </div>
+            <div style="padding: 10px;">
+                <iframe 
+                    width="100%" 
+                    height="315" 
+                    src="about:blank" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <div style="margin-top: 10px;">
+                    <h2>$DELROY Browser</h2>  
+                    <p>Enter a URL above to begin browsing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="skype" style="width: 400px; height: 500px;">
+        <div class="title-bar">
+            <div>$DELROY Chat 1.0</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('skype')">−</button>
+                <button class="close-button" onclick="closeWindow('skype')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div style="display: flex; height: 400px;">
+                <div style="width: 150px; background: #f0f0f0; border-right: 1px solid #808080; padding: 10px;">
+                    <div style="font-weight: bold; margin-bottom: 10px;">Online Users:</div>
+                    <div id="skype-contacts"></div>
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column;">
+                    <div id="skype-messages" style="flex: 1; padding: 10px; overflow-y: auto; background: white;">
+                        <div style="text-align: center; color: #666;">
+                            Welcome to $DELROY Chat 1.0!
+                        </div>
+                    </div>
+                    <div style="padding: 10px; background: #f0f0f0; border-top: 1px solid #808080;">
+                        <div style="display: flex; gap: 5px;">
+                            <input type="text" id="skype-input" style="flex: 1; padding: 5px;" placeholder="Type a message...">
+                            <button onclick="sendSkypeMessage()">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="astimail-login" style="width: 400px;">
+        <div class="title-bar">
+            <div>$DELROY Mail - Login</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('astimail-login')">−</button>
+                <button class="close-button" onclick="closeWindow('astimail-login')">×</button>
+            </div>
+        </div>
+        <div class="window-content" style="padding: 20px;">
+            <div id="astimail-login-form">
+                <h3 style="text-align: center; margin-bottom: 20px;">Welcome to $DELROY Mail</h3>
+                <input type="text" id="astimail-username" placeholder="Username" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                <input type="password" id="astimail-password" placeholder="Password" style="width: 100%; padding: 10px; margin-bottom: 20px;">
+                <button onclick="loginAstiMail()" style="width: 100%; padding: 10px;">Login</button>
+                <p style="text-align: center; margin-top: 10px;">
+                    Need an account? <span onclick="showAstiMailSignup()" style="color: #008080; cursor: pointer;">Register</span>
+                </p>
+            </div>
+            <div id="astimail-signup-form" style="display: none;">
+                <h3 style="text-align: center; margin-bottom: 20px;">Create $DELROY Mail Account</h3>
+                <input type="text" id="astimail-new-username" placeholder="Choose a username" style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                <div style="display: flex; margin-bottom: 10px;">
+                    <input type="text" id="astimail-email-prefix" placeholder="email" style="flex: 1; padding: 10px;">
+                    <span style="padding: 10px; background: #f0f0f0;" id="email-domain">@astimail.mail</span>
+                </div>
+                <input type="password" id="astimail-new-password" placeholder="Password" style="width: 100%; padding: 10px; margin-bottom: 20px;">
+                <button onclick="signupAstiMail()" style="width: 100%; padding: 10px;">Sign Up</button>
+                <p style="text-align: center; margin-top: 10px;">
+                    Have an account? <span onclick="showAstiMailLogin()" style="color: #008080; cursor: pointer;">Login</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="astimail" style="width: 800px; height: 600px;">
+        <div class="title-bar">
+            <div>$DELROY Mail</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('astimail')">−</button>
+                <button class="close-button" onclick="closeWindow('astimail')">×</button>
+            </div>
+        </div>
+        <div class="window-content" style="display: flex; height: 100%;">
+            <div style="width: 200px; background: #f0f0f0; border-right: 1px solid #808080; padding: 10px;">
+                <button style="width: 100%; padding: 10px; margin-bottom: 10px;">Compose</button>
+                <div style="font-weight: bold; margin: 10px 0;">Folders</div>
+                <div style="padding: 5px; cursor: pointer;">📥 Inbox</div>
+                <div style="padding: 5px; cursor: pointer;">📤 Sent</div>
+                <div style="padding: 5px; cursor: pointer;">📝 Drafts</div>
+                <div style="padding: 5px; cursor: pointer;">🗑️ Trash</div>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column;">
+                <div style="padding: 10px; border-bottom: 1px solid #808080;">
+                    <div id="astimail-address" style="margin-bottom: 10px; font-weight: bold;"></div>
+                </div>
+                <div style="flex: 1; padding: 10px; overflow-y: auto;">
+                    <div style="text-align: center; color: #666; margin-top: 20px;">
+                        Welcome to $DELROY Mail! Your inbox is empty.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="pc-crash" style="width: 400px;">
+        <div class="title-bar">
+            <div>System Error</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('pc-crash')">−</button>
+                <button class="close-button" onclick="closeWindow('pc-crash')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div id="error-container" style="padding: 20px; overflow-y: auto; height: 300px;">
+                CRITICAL_ERROR! SYSTEM_FAILURE_IMMINENT
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="paint">
+        <div class="title-bar">
+            <div>$DELROY Paint</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('paint')">−</button>
+                <button class="close-button" onclick="closeWindow('paint')">×</button>
+            </div>
+        </div>
+        <div class="window-content">
+            <div class="paint-content">
+                <div class="paint-toolbar">
+                    <button class="paint-btn active" onclick="setPaintTool('pencil')">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        </svg>
+                    </button>
+                    <button class="paint-btn" onclick="setPaintTool('brush')">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M7 14c-1.66 0-3 1.34-3 3 0 1.31-1.16 2-2 2 .92 1.22 2.49 2 4 2 2.21 0 4-1.79 4-4 0-1.66-1.34-3-3-3zm13.71-9.37l-1.34-1.34c-.39-.39-1.02-.39-1.41 0L9 12.25 11.75 15l8.96-8.96c.39-.39.39-1.02 0-1.41z"/>
+                        </svg>
+                    </button>
+                    <button class="paint-btn" onclick="setPaintTool('eraser')">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" fill="#4a90e2"/>
+                            <path d="M12 6v12M6 12h12" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="paint-btn" onclick="showColorPicker()">
+                        <svg viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M15 3H5C3.89 3 3 3.9 3 5V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V7L15 3M17 3H5C3.89 3 3 3.9 3 5V19A2 2 0 0,0 5 21H19A2 2 0 0,0 21 19V7L17 3Z"/>
+                        </svg>
+                    </button>
+                    <button class="paint-btn" onclick="clearCanvas()">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="6" y="6" width="12" height="12" rx="2" fill="#4a90e2"/>
+                            <rect x="8" y="8" width="8" height="8" fill="white" rx="1"/>
+                        </svg>
+                    </button>
+                    <button class="paint-btn" onclick="saveCanvas()">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="3" width="18" height="18" rx="2" fill="#4a90e2"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="paint-canvas-container">
+                    <canvas id="paint-canvas" width="600" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="calculator">
+        <div class="title-bar">
+            <div>Calculator</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('calculator')">−</button>
+                <button class="close-button" onclick="closeWindow('calculator')">×</button>
+            </div>
+        </div>
+        <div class="window-content calculator-content">
+            <div class="calculator-display">
+                <div id="calc-history"></div>
+                <input type="text" id="calc-input" readonly value="0">
+            </div>
+            <div class="calculator-grid">
+                <button class="calc-btn calc-btn-special" onclick="clearCalc()">C</button>
+                <button class="calc-btn calc-btn-special" onclick="backspace()">⌫</button>
+                <button class="calc-btn calc-btn-special" onclick="appendCalc('(')">(</button>
+                <button class="calc-btn calc-btn-special" onclick="appendCalc(')')">)</button>
+                <button class="calc-btn" onclick="appendCalc('7')">7</button>
+                <button class="calc-btn" onclick="appendCalc('8')">8</button>
+                <button class="calc-btn" onclick="appendCalc('9')">9</button>
+                <button class="calc-btn calc-btn-op" onclick="appendCalc('/')">÷</button>
+                <button class="calc-btn" onclick="appendCalc('4')">4</button>
+                <button class="calc-btn" onclick="appendCalc('5')">5</button>
+                <button class="calc-btn" onclick="appendCalc('6')">6</button>
+                <button class="calc-btn calc-btn-op" onclick="appendCalc('*')">×</button>
+                <button class="calc-btn" onclick="appendCalc('1')">1</button>
+                <button class="calc-btn" onclick="appendCalc('2')">2</button>
+                <button class="calc-btn" onclick="appendCalc('3')">3</button>
+                <button class="calc-btn calc-btn-op" onclick="appendCalc('-')">−</button>
+                <button class="calc-btn" onclick="appendCalc('0')">0</button>
+                <button class="calc-btn" onclick="appendCalc('.')">.</button>
+                <button class="calc-btn calc-btn-equals" onclick="calculateResult()">=</button>
+                <button class="calc-btn calc-btn-op" onclick="appendCalc('+')">+</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="terminal">
+        <div class="title-bar">
+            <div>$DELROY-Terminal</div>
+            <div class="title-bar-buttons">
+                <button class="minimize-button" onclick="minimizeWindow('terminal')">−</button>
+                <button class="close-button" onclick="closeWindow('terminal')">×</button>
+            </div>
+        </div>
+        <div class="window-content" style="background: #000; color: #00ff00; padding: 10px; font-family: monospace; height: 300px; overflow-y: auto;">
+            <div id="terminal-output" style="white-space: pre-wrap; margin-bottom: 10px;">
+$DELROY Corp(R) $DELROY(TM) $DELROY-DOS(R) Mode
+Beta Version
+
+C:\$DELROY></div>
+            <div style="display: flex;">
+                <span id="prompt">C:\$DELROY></span>
+                <input type="text" id="terminal-input" 
+                    style="background: transparent; 
+                           border: none; 
+                           outline: none; 
+                           color: #00ff00; 
+                           font-family: monospace;
+                           width: 100%;
+                           caret-color: #00ff00;">
+            </div>
+        </div>
+    </div>
+
+    <div class="ai-sidebar">
+        <div class="ai-sidebar-header">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="#4a90e2"/>
+                <text x="12" y="16" text-anchor="middle" fill="white" font-size="12">AI</text>
+            </svg>
+            <span>AI Assistant</span>
+        </div>
+        <div class="ai-sidebar-content" id="ai-chat">
+            <!-- Chat messages will be inserted here -->
+        </div>
+        <div class="ai-sidebar-input">
+            <input type="text" id="ai-input" placeholder="Ask me anything...">
+            <button onclick="sendAIMessage()">Send</button>
+        </div>
+    </div>
+</div>
+
+<script>
+let aiIntegrationEnabled = true;
+let aiNotifications = [];
+let aiSuggestions = [];
+let minimizedWindows = new Set();
+let currentTheme = 'default';
+
+async function getCurrentUser() {
+  if (window.currentUser) return window.currentUser;
+  try {
+    window.currentUser = await window.websim.getUser();
+  } catch (err) {
+    console.error('Error getting current user:', err);
+    return null;
+  }
+  return window.currentUser;
+}
+
+async function updateStartMenuUser() {
+  const user = await getCurrentUser();
+  
+  if (user && document.querySelector('.start-menu-user')) {
+    const userSection = document.querySelector('.start-menu-user');
+    
+    userSection.innerHTML = `
+      <img src="https://images.websim.ai/avatar/${user.username}" 
+           class="start-menu-user-avatar" 
+           alt="${user.username}'s avatar">
+      <div>
+        <div style="font-weight: 500;">@${user.username}</div>
+        <div style="font-size: 12px; opacity: 0.7;">${user.description || '$DELROY User'}</div>
+      </div>
+    `;
+  }
+}
+
+async function updateProfileContent() {
+    const user = await getCurrentUser();
+    
+    if (user) {
+        document.getElementById('profile-avatar').src = `https://images.websim.ai/avatar/${user.username}`;
+        document.getElementById('profile-username').textContent = `@${user.username}`;
+        document.getElementById('profile-created').textContent = new Date(user.created_at).toLocaleDateString();
+        document.getElementById('profile-description').textContent = user.description || 'No description set';
+        document.getElementById('profile-twitter').textContent = user.twitter ? `@${user.twitter}` : 'Not set';
+        document.getElementById('profile-discord').textContent = user.discord || 'Not set';
+        document.getElementById('profile-install-date').textContent = new Date().toLocaleDateString();
+    }
+}
+
+function showAIToast(message, action = null) {
+    const toast = document.createElement('div');
+    toast.className = 'ai-toast';
+    
+    toast.innerHTML = `
+        <svg width="24" height="24" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="#4a90e2"/>
+            <text x="12" y="16" text-anchor="middle" fill="white" font-size="12">AI</text>
+        </svg>
+        <div>${message}</div>
+    `;
+    
+    if (action) {
+        const actionBtn = document.createElement('button');
+        actionBtn.innerText = 'Open';
+        actionBtn.onclick = action;
+        toast.appendChild(actionBtn);
+    }
+    
+    document.body.appendChild(toast);
+    
+    // Trigger reflow before adding show class
+    toast.offsetHeight;
+    
+    setTimeout(() => toast.classList.add('show'), 10);
+    
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300);
+    }, 5000);
+}
+
+function addAINotification(message, windowId = null) {
+    aiNotifications.push({ message, windowId });
+    updateAINotificationBadge();
+}
+
+function updateAINotificationBadge() {
+    const aiIcon = document.querySelector('.icon [onclick="openWindow(\'ai-assistant\')"]');
+    if (!aiIcon) return;
+    
+    let badge = aiIcon.querySelector('.ai-notification-badge');
+    if (!badge && aiNotifications.length > 0) {
+        badge = document.createElement('div');
+        badge.className = 'ai-notification-badge';
+        aiIcon.appendChild(badge);
+    }
+    
+    if (badge) {
+        badge.textContent = aiNotifications.length;
+        if (aiNotifications.length === 0) {
+            badge.remove();
+        }
+    }
+}
+
+function closeWindow(id) {
+    const window = document.getElementById(id);
+    if (window) {
+        window.style.animation = 'windowClose 0.2s';
+        window.addEventListener('animationend', () => {
+            window.style.display = 'none';
+            window.style.animation = '';
+            
+            // Remove taskbar button if it exists
+            const taskbarButton = document.querySelector(`.taskbar-window-button[data-window="${id}"]`);
+            if (taskbarButton) {
+                taskbarButton.remove();
+            }
+            minimizedWindows.delete(id);
+        }, {once: true});
+    }
+}
+
+function toggleStartMenu() {
+    const startMenu = document.getElementById('start-menu');
+    const isVisible = startMenu.style.display === 'block';
+    
+    if (isVisible) {
+        startMenu.style.animation = 'menuSlide 0.2s reverse';
+        startMenu.addEventListener('animationend', () => {
+            startMenu.style.display = 'none';
+            startMenu.scrollTop = 0;
+        }, {once: true});
+    } else {
+        startMenu.style.display = 'block';
+        startMenu.style.animation = 'menuSlide 0.2s';
+    }
+    updateStartMenuUser();
+}
+
+let aiSidebarOpen = false;
+
+function toggleAISidebar() {
+    const sidebar = document.querySelector('.ai-sidebar');
+    if (sidebar) {
+        aiSidebarOpen = !aiSidebarOpen;
+        sidebar.classList.toggle('open');
+        
+        // Update taskbar button state
+        const taskbarButton = document.querySelector('.ai-taskbar-button');
+        if (taskbarButton) {
+            taskbarButton.style.background = aiSidebarOpen ? 'rgba(255,255,255,0.2)' : '';
+        }
+    }
+}
+
+// 3D Game variables
+let gameLoopId = null;
+let fpsTime = 0;
+let frameCount = 0;
+let lastLoop = new Date();
+let ctx3d = null;
+let gameObjects = [];
+let playerX = 190;
+let playerY = 130;
+let playerAngle = 0;
+let bullets = [];
+
+function startDemo3DGame() {
+    if (gameLoopId) return; // Already running
+    
+    const canvas = document.getElementById('game-canvas');
+    ctx3d = canvas.getContext('2d');
+    
+    // Initialize game objects
+    gameObjects = [
+        {x: 100, y: 50, size: 20, color: '#ff0000'},
+        {x: 280, y: 180, size: 20, color: '#00ff00'},
+        {x: 150, y: 200, size: 20, color: '#0000ff'}
+    ];
+    
+    // Reset player position
+    playerX = 190;
+    playerY = 130;
+    playerAngle = 0;
+    bullets = [];
+    
+    // Start game loop
+    gameLoopId = requestAnimationFrame(gameLoop);
+    
+    // Add keyboard controls
+    document.addEventListener('keydown', handleGameControls);
+}
+
+function pauseDemo3DGame() {
+    if (gameLoopId) {
+        cancelAnimationFrame(gameLoopId);
+        gameLoopId = null;
+        document.removeEventListener('keydown', handleGameControls);
+    }
+}
+
+function handleGameControls(e) {
+    const speed = 5;
+    const rotateSpeed = 0.1;
+    
+    switch(e.key) {
+        case 'ArrowLeft':
+            playerAngle -= rotateSpeed;
+            break;
+        case 'ArrowRight':
+            playerAngle += rotateSpeed;
+            break;
+        case 'ArrowUp':
+            playerX += Math.cos(playerAngle) * speed;
+            playerY += Math.sin(playerAngle) * speed;
+            break;
+        case 'ArrowDown':
+            playerX -= Math.cos(playerAngle) * speed;
+            playerY -= Math.sin(playerAngle) * speed;
+            break;
+        case ' ': // Space to shoot
+            bullets.push({
+                x: playerX,
+                y: playerY,
+                angle: playerAngle,
+                speed: 10,
+                lifetime: 60
+            });
+            break;
+    }
+    
+    // Keep player in bounds
+    playerX = Math.max(20, Math.min(360, playerX));
+    playerY = Math.max(20, Math.min(240, playerY));
+}
+
+function gameLoop() {
+    // FPS counter
+    const thisLoop = new Date();
+    const fpsDelta = thisLoop - lastLoop;
+    frameCount++;
+    fpsTime += fpsDelta;
+    
+    if (fpsTime > 1000) {
+        document.getElementById('fps-counter').textContent = frameCount;
+        frameCount = 0;
+        fpsTime = 0;
+    }
+    
+    lastLoop = thisLoop;
+    
+    // Clear canvas
+    ctx3d.fillStyle = '#000';
+    ctx3d.fillRect(0, 0, 380, 260);
+    
+    // Draw player
+    ctx3d.fillStyle = '#ffffff';
+    ctx3d.beginPath();
+    ctx3d.arc(playerX, playerY, 10, 0, Math.PI * 2);
+    ctx3d.fill();
+    
+    // Draw player direction line
+    ctx3d.strokeStyle = '#ffffff';
+    ctx3d.beginPath();
+    ctx3d.moveTo(playerX, playerY);
+    ctx3d.lineTo(
+        playerX + Math.cos(playerAngle) * 20,
+        playerY + Math.sin(playerAngle) * 20
+    );
+    ctx3d.stroke();
+    
+    // Update and draw bullets
+    for (let i = bullets.length - 1; i >= 0; i--) {
+        const bullet = bullets[i];
+        bullet.x += Math.cos(bullet.angle) * bullet.speed;
+        bullet.y += Math.sin(bullet.angle) * bullet.speed;
+        bullet.lifetime--;
+        
+        if (bullet.lifetime <= 0 || 
+            bullet.x < 0 || bullet.x > 380 || 
+            bullet.y < 0 || bullet.y > 260) {
+            bullets.splice(i, 1);
+            continue;
+        }
+        
+        ctx3d.fillStyle = '#ffff00';
+        ctx3d.beginPath();
+        ctx3d.arc(bullet.x, bullet.y, 3, 0, Math.PI * 2);
+        ctx3d.fill();
+    }
+    
+    // Draw game objects
+    gameObjects.forEach((obj, i) => {
+        // Check bullet collisions
+        bullets.forEach((bullet, j) => {
+            const dx = bullet.x - obj.x;
+            const dy = bullet.y - obj.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            
+            if (dist < obj.size / 2 + 3) {
+                bullets.splice(j, 1);
+                obj.size = Math.max(5, obj.size - 5);
+            }
+        });
+        
+        ctx3d.fillStyle = obj.color;
+        ctx3d.beginPath();
+        ctx3d.arc(obj.x, obj.y, obj.size / 2, 0, Math.PI * 2);
+        ctx3d.fill();
+    });
+    
+    gameLoopId = requestAnimationFrame(gameLoop);
+}
+
+// Skype functionality
+let skypeRoom = null;
+const fakeUsers = ['Alice', 'Bob', 'Charlie', 'David', 'Eve'];
+const fakeMessages = [
+    'Hey everyone!',
+    'How are you doing?',
+    'Anyone tried the new $DELROY?',
+    'The weather is nice today!',
+    'What are you all up to?'
+];
+
+function initSkype() {
+    const contactsDiv = document.getElementById('skype-contacts');
+    const messagesDiv = document.getElementById('skype-messages');
+    
+    contactsDiv.innerHTML = '';
+    messagesDiv.innerHTML = '<div style="text-align: center; color: #666;">Welcome to $DELROY Chat 1.0!</div>';
+    
+    fakeUsers.forEach(user => {
+        const userDiv = document.createElement('div');
+        userDiv.style.padding = '5px';
+        userDiv.style.cursor = 'pointer';
+        userDiv.innerHTML = `
+            <svg width="10" height="10" style="margin-right: 5px;">
+                <circle cx="5" cy="5" r="4" fill="#00ff00"/>
+            </svg>
+            ${user}
+        `;
+        contactsDiv.appendChild(userDiv);
+    });
+    
+    if (!skypeRoom) {
+        skypeRoom = setInterval(() => {
+            const randomUser = fakeUsers[Math.floor(Math.random() * fakeUsers.length)];
+            const randomMessage = fakeMessages[Math.floor(Math.random() * fakeMessages.length)];
+            
+            const messageDiv = document.createElement('div');
+            messageDiv.style.margin = '5px 0';
+            messageDiv.innerHTML = `<strong>${randomUser}:</strong> ${randomMessage}`;
+            messagesDiv.appendChild(messageDiv);
+            
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }, 5000);
+    }
+}
+
+function sendSkypeMessage() {
+    const input = document.getElementById('skype-input');
+    const message = input.value.trim();
+    if (!message) return;
+    
+    const messagesDiv = document.getElementById('skype-messages');
+    const messageDiv = document.createElement('div');
+    messageDiv.style.margin = '5px 0';
+    messageDiv.style.textAlign = 'right';
+    messageDiv.innerHTML = `<strong>You:</strong> ${message}`;
+    messagesDiv.appendChild(messageDiv);
+    
+    input.value = '';
+    messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+// $DELROY Mail functionality
+function showAstiMailSignup() {
+    document.getElementById('astimail-login-form').style.display = 'none';
+    document.getElementById('astimail-signup-form').style.display = 'block';
+}
+
+function showAstiMailLogin() {
+    document.getElementById('astimail-login-form').style.display = 'block';
+    document.getElementById('astimail-signup-form').style.display = 'none';
+}
+
+function loginAstiMail() {
+    const username = document.getElementById('astimail-username').value;
+    const password = document.getElementById('astimail-password').value;
+    
+    if (username && password) {
+        astiMailLoggedIn = true;
+        currentAstiMailAddress = `${username}@astimail.mail`;
+        document.getElementById('astimail-address').textContent = currentAstiMailAddress;
+        closeWindow('astimail-login');
+        openWindow('astimail');
+        
+        const messagesDiv = document.querySelector('#astimail .window-content > div:last-child');
+        const aiWelcome = document.createElement('div');
+        aiWelcome.innerHTML = `
+            <div style="background: #f0f0f0; padding: 10px; border-radius: 5px; margin: 10px;">
+                <strong>AI Assistant:</strong> Welcome to $DELROY Mail! I'm here to help you manage your emails efficiently.
+                Let me know if you need any assistance!
+            </div>
+        `;
+        messagesDiv.appendChild(aiWelcome);
+    } else {
+        alert('Please enter both username and password');
+    }
+}
+
+function signupAstiMail() {
+    const username = document.getElementById('astimail-new-username').value;
+    const emailPrefix = document.getElementById('astimail-email-prefix').value;
+    const password = document.getElementById('astimail-new-password').value;
+    
+    if (username && emailPrefix && password) {
+        astiMailLoggedIn = true;
+        currentAstiMailAddress = `${emailPrefix}@astimail.mail`;
+        document.getElementById('astimail-address').textContent = currentAstiMailAddress;
+        closeWindow('astimail-login');
+        openWindow('astimail');
+    } else {
+        alert('Please fill in all fields');
+    }
+}
+
+// Clock update
+function updateClock() {
+    const now = new Date();
+    const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    document.getElementById('clock').textContent = timeStr;
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// Minesweeper setup
+function setupMinesweeper() {
+    const grid = document.getElementById('minesweeper');
+    for (let i = 0; i < 16; i++) {
+        const cell = document.createElement('div');
+        cell.className = 'game-cell';
+        cell.onclick = () => {
+            cell.style.border = '2px inset #fff';
+            cell.textContent = Math.floor(Math.random() * 2) ? '💣' : '1';
+        };
+        grid.appendChild(cell);
+    }
+}
+
+// Add event listener for Enter key in Skype input
+document.getElementById('skype-input')?.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        sendSkypeMessage();
+    }
+});
+
+// Add click listener to close start menu when clicking outside
+document.addEventListener('click', (e) => {
+    const startMenu = document.getElementById('start-menu');
+    const startButton = document.querySelector('.start-button');
+    
+    if (!startButton.contains(e.target) && !startMenu.contains(e.target)) {
+        startMenu.style.display = 'none';
+    }
+});
+
+// Initialize everything
+document.addEventListener('DOMContentLoaded', () => {
+    setupMinesweeper();
+    
+    const startupScreen = document.getElementById('startup-screen');
+    const progressBar = document.querySelector('.progress-bar');
+    const loadingText = document.getElementById('loading-text');
+    const startMenu = document.getElementById('start-menu');
+    
+    startMenu.style.display = 'none';
+
+    // Show startup animation
+    loadingText.textContent = 'Starting $DELROY...';
+    progressBar.style.width = '0%';
+
+    setTimeout(() => {
+        progressBar.style.width = '30%';
+        loadingText.textContent = 'Loading system components...';
+    }, 500);
+
+    setTimeout(() => {
+        progressBar.style.width = '60%';
+        loadingText.textContent = 'Initializing desktop environment...';
+    }, 1500);
+
+    setTimeout(() => {
+        progressBar.style.width = '100%';
+        loadingText.textContent = 'Welcome to $DELROY!';
+    }, 2500);
+
+    const taskbar = document.querySelector('.taskbar');
+    taskbar.classList.add('hidden');
+
+    setTimeout(() => {
+        startupScreen.style.opacity = '0';
+        startupScreen.style.transition = 'opacity 0.5s ease-out';
+        
+        setTimeout(() => {
+            startupScreen.style.display = 'none';
+            taskbar.classList.remove('hidden'); // Show taskbar when boot screen is hidden
+        }, 500);
+    }, 3000);
+    
+    document.getElementById('astimail-new-username')?.addEventListener('input', function(e) {
+        const isAdmin = e.target.value.toLowerCase().includes('admin');
+        const domainDisplay = document.getElementById('email-domain');
+        if (domainDisplay) {
+            domainDisplay.textContent = isAdmin ? '@asti.com' : '@astimail.mail';
+        }
+    });
+
+    setTimeout(() => {
+        if (aiIntegrationEnabled) {
+            showAIToast(
+                'Welcome to $DELROY! I\'m your AI Assistant. Click me on the taskbar to open the sidebar.',
+                () => toggleAISidebar()
+            );
+        }
+    }, 4000);
+    getCurrentUser().then(user => {
+      if (user) {
+        console.log('Logged in as:', user.username);
+      }
+    });
+});
+
+// Add AI Assistant functionality
+function applyTheme(theme) {
+    currentTheme = theme;
+    localStorage.setItem('$DELROY-theme', theme);
+    document.body.classList.remove('classic-theme');
+    
+    if (theme === 'classic') {
+        document.body.classList.add('classic-theme');
+    }
+    
+    // Update AI Assistant about theme change
+    const aiChat = document.getElementById('ai-chat');
+    if (aiChat) {
+        const themeMessage = document.createElement('div');
+        themeMessage.className = 'ai-message ai';
+        themeMessage.innerHTML = `
+            <svg class="ai-message-avatar" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="#4a90e2"/>
+                <text x="12" y="16" text-anchor="middle" fill="white" font-size="12">AI</text>
+            </svg>
+            <div class="ai-message-bubble">Theme changed to ${theme}. Let me know if you need help with anything else!</div>
+        `;
+        
+        if (aiChat.children.length) {
+            aiChat.appendChild(themeMessage);
+        } else {
+            aiChat.innerHTML = '';
+            aiChat.appendChild(themeMessage);
+        }
+        
+        aiChat.scrollTop = aiChat.scrollHeight;
+    }
+}
+
+document.getElementById('theme-selector')?.addEventListener('change', (e) => {
+    applyTheme(e.target.value);
+});
+
+const savedTheme = localStorage.getItem('$DELROY-theme');
+if (savedTheme) {
+    applyTheme(savedTheme);
+}
+
+async function sendAIMessage() {
+    const input = document.getElementById('ai-input');
+    const message = input.value.trim();
+    if (!message) return;
+    
+    const aiChat = document.querySelector('.ai-sidebar-content');
+    
+    const userDiv = document.createElement('div');
+    userDiv.className = 'ai-message user';
+    userDiv.innerHTML = `
+        <div class="ai-message-bubble">${message}</div>
+    `;
+    aiChat.appendChild(userDiv);
+    
+    input.value = '';
+    
+    const typingDiv = document.createElement('div');
+    typingDiv.className = 'ai-message ai';
+    typingDiv.innerHTML = `
+        <svg class="ai-message-avatar" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" fill="#4a90e2"/>
+            <text x="12" y="16" text-anchor="middle" fill="white" font-size="12">AI</text>
+        </svg>
+        <div class="ai-message-bubble"><em>AI is typing...</em></div>
+    `;
+    aiChat.appendChild(typingDiv);
+
+    try {
+        const response = await fetch('/api/ai_completion', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+            },
+            body: JSON.stringify({
+                prompt: `You are the $DELROY AI Assistant. The user is currently using various windows and applications. Analyze their message and provide relevant system actions if needed: ${message}
+                
+                <typescript-interface>
+                interface Response {
+                  reply: string;
+                  actions?: {
+                    type: 'open_window' | 'close_window' | 'show_tutorial' | 'system_action';
+                    target?: string;
+                    description?: string;
+                  }[];
+                }
+                </typescript-interface>
+                <example>
+                {
+                  "reply": "I can help you with that! Would you like me to open the Control Panel?",
+                  "actions": [
+                    {
+                      "type": "open_window",
+                      "target": "control-panel",
+                      "description": "Open Control Panel"
+                    }
+                  ]
+                }
+                </example>`,
+                data: message
+            }),
+        });
+        
+        const data = await response.json();
+        
+        typingDiv.remove();
+        
+        const aiDiv = document.createElement('div');
+        aiDiv.className = 'ai-message ai';
+        aiDiv.innerHTML = `
+            <svg class="ai-message-avatar" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="#4a90e2"/>
+                <text x="12" y="16" text-anchor="middle" fill="white" font-size="12">AI</text>
+            </svg>
+            <div class="ai-message-bubble">${data.reply}</div>
+        `;
+        
+        if (data.actions && data.actions.length > 0) {
+            const actionsDiv = document.createElement('div');
+            actionsDiv.className = 'ai-message-actions';
+            data.actions.forEach(action => {
+                const actionBtn = document.createElement('div');
+                actionBtn.className = 'ai-quick-action';
+                actionBtn.textContent = action.description;
+                actionBtn.onclick = () => {
+                    if (action.type === 'open_window') {
+                        openWindow(action.target);
+                    } else if (action.type === 'close_window') {
+                        closeWindow(action.target);
+                    } else if (action.type === 'show_tutorial') {
+                        startTutorial();
+                    }
+                };
+                actionsDiv.appendChild(actionBtn);
+            });
+            const bubbleDiv = aiDiv.querySelector('.ai-message-bubble');
+            bubbleDiv.appendChild(actionsDiv);
+        }
+        
+        aiChat.appendChild(aiDiv);
+        
+    } catch (error) {
+        console.error('Error fetching AI response:', error);
+        typingDiv.innerHTML = '<em style="color: red;">Error fetching response</em>';
+    }
+    
+    aiChat.scrollTop = aiChat.scrollHeight;
+}
+
+document.getElementById('ai-input')?.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        sendAIMessage();
+    }
+});
+
+if (document.getElementById('ai-assistant')) {
+    document.getElementById('ai-assistant').addEventListener('open', () => {
+        const aiChat = document.getElementById('ai-chat');
+        if (!aiChat.children.length) {
+            const welcomeDiv = document.createElement('div');
+            welcomeDiv.className = 'ai-message ai';
+            welcomeDiv.innerHTML = `
+                <svg class="ai-message-avatar" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" fill="#4a90e2"/>
+                    <text x="12" y="16" text-anchor="middle" fill="white" font-size="12">AI</text>
+                </svg>
+                <div class="ai-message-bubble">Hello! I'm your $DELROY AI Assistant. How can I help you today?</div>
+            `;
+            aiChat.appendChild(welcomeDiv);
+        }
+    });
+}
+
+function startTutorial() {
+    // Close any open windows
+    const windows = document.querySelectorAll('.window');
+    windows.forEach(window => {
+        closeWindow(window.id);
+    });
+
+    let currentStep = 0;
+    const tutorialSteps = [
+        {
+            text: "Welcome to $DELROY! Let's take a quick tour.",
+            highlight: null
+        },
+        {
+            text: "Click the Start button to access all your programs and settings.",
+            highlight: ".start-button" 
+        },
+        {
+            text: "The taskbar shows your running programs and system notifications.",
+            highlight: ".taskbar"
+        },
+        {
+            text: "Your AI Assistant is always available to help - just click the AI icon.",
+            highlight: ".ai-taskbar-button"
+        },
+        {
+            text: "Desktop icons give you quick access to programs and files.",
+            highlight: ".icon"
+        }
+    ];
+
+    function showTutorialStep() {
+        if (currentStep >= tutorialSteps.length) {
+            showAIToast("Tutorial completed! Feel free to explore $DELROY.");
+            return;
+        }
+
+        const step = tutorialSteps[currentStep];
+        
+        // Remove previous highlights
+        document.querySelectorAll('.tutorial-highlight').forEach(el => {
+            el.classList.remove('tutorial-highlight');
+        });
+
+        if (step.highlight) {
+            document.querySelector(step.highlight)?.classList.add('tutorial-highlight');
+        }
+
+        showAIToast(step.text, () => {
+            currentStep++;
+            showTutorialStep();
+        });
+    }
+
+    showTutorialStep();
+}
+
+let currentCalculation = '';
+let lastResult = '';
+
+function clearCalc() {
+    currentCalculation = '';
+    document.getElementById('calc-input').value = '0';
+    document.getElementById('calc-history').textContent = '';
+}
+
+function backspace() {
+    currentCalculation = currentCalculation.slice(0, -1);
+    document.getElementById('calc-input').value = currentCalculation || '0';
+}
+
+function appendCalc(value) {
+    if (currentCalculation === '0' && !isNaN(value)) {
+        currentCalculation = value;
+    } else {
+        currentCalculation += value;
+    }
+    document.getElementById('calc-input').value = currentCalculation;
+}
+
+function calculateResult() {
+    try {
+        const history = currentCalculation;
+        // Use Function instead of eval for better security
+        const result = Function('"use strict";return (' + currentCalculation + ')')();
+        document.getElementById('calc-history').textContent = history;
+        document.getElementById('calc-input').value = result;
+        lastResult = result;
+        currentCalculation = result.toString();
+    } catch (e) {
+        document.getElementById('calc-input').value = 'Error';
+        setTimeout(clearCalc, 1000);
+    }
+}
+
+document.addEventListener('keydown', function(e) {
+    const calculatorWindow = document.getElementById('calculator');
+    if (calculatorWindow.style.display !== 'block') return;
+
+    if (e.key >= '0' && e.key <= '9' || e.key === '.') {
+        appendCalc(e.key);
+    } else if (e.key === '+' || e.key === '-' || e.key === '*' || e.key === '/') {
+        appendCalc(e.key);
+    } else if (e.key === 'Enter') {
+        calculateResult();
+    } else if (e.key === 'Backspace') {
+        backspace();
+    } else if (e.key === 'Escape') {
+        clearCalc();
+    }
+});
+
+let paintTool = 'pencil';
+let paintContext = null;
+let painting = false;
+let lastX = 0;
+let lastY = 0;
+
+function initializePaint() {
+    const canvas = document.getElementById('paint-canvas');
+    if (!canvas) return;
+    
+    // Set canvas size to match container
+    const container = canvas.parentElement;
+    canvas.width = container.clientWidth;
+    canvas.height = container.clientHeight;
+    
+    paintContext = canvas.getContext('2d');
+    paintContext.fillStyle = 'white';
+    paintContext.fillRect(0, 0, canvas.width, canvas.height);
+    
+    canvas.addEventListener('mousedown', startPainting);
+    canvas.addEventListener('mousemove', paint);
+    canvas.addEventListener('mouseup', stopPainting);
+    canvas.addEventListener('mouseleave', stopPainting);
+    
+    // Set initial active tool
+    setPaintTool('pencil');
+}
+
+function startPainting(e) {
+    painting = true;
+    const rect = e.target.getBoundingClientRect();
+    [lastX, lastY] = [e.clientX - rect.left, e.clientY - rect.top];
+    
+    // Start new path and do initial draw
+    paintContext.beginPath();
+    paintContext.moveTo(lastX, lastY);
+    paint(e);
+}
+
+function paint(e) {
+    if (!painting) return;
+    
+    const rect = e.target.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    switch(paintTool) {
+        case 'pencil':
+            paintContext.lineWidth = 2;
+            paintContext.lineCap = 'round';
+            paintContext.lineJoin = 'round';
+            paintContext.strokeStyle = '#000000';
+            break;
+        case 'brush':
+            paintContext.lineWidth = 8;
+            paintContext.lineCap = 'round';
+            paintContext.lineJoin = 'round';
+            paintContext.strokeStyle = '#000000';
+            break;
+        case 'eraser':
+            paintContext.lineWidth = 20;
+            paintContext.lineCap = 'square';
+            paintContext.strokeStyle = 'white';
+            break;
+    }
+    
+    paintContext.beginPath();
+    paintContext.moveTo(lastX, lastY);
+    paintContext.lineTo(x, y);
+    paintContext.stroke();
+    
+    [lastX, lastY] = [x, y];
+}
+
+function stopPainting() {
+    painting = false;
+    paintContext.beginPath(); // Start a new path when done painting
+}
+
+function setPaintTool(tool) {
+    paintTool = tool;
+    document.querySelectorAll('.paint-btn').forEach(btn => btn.classList.remove('active'));
+    document.querySelector(`.paint-btn[onclick*="${tool}"]`).classList.add('active');
+    
+    if (!paintContext) return;
+    
+    // Reset context properties
+    paintContext.strokeStyle = tool === 'eraser' ? 'white' : '#000000';
+    paintContext.lineWidth = tool === 'pencil' ? 2 : tool === 'brush' ? 8 : 20;
+    paintContext.lineCap = tool === 'eraser' ? 'square' : 'round';
+    paintContext.lineJoin = tool === 'eraser' ? 'miter' : 'round';
+    
+    // Update cursor based on tool
+    const canvas = document.getElementById('paint-canvas');
+    if (!canvas) return;
+    
+    switch(tool) {
+        case 'pencil':
+            canvas.style.cursor = 'crosshair';
+            break;
+        case 'brush':
+            canvas.style.cursor = 'pointer';
+            break;
+        case 'eraser':
+            canvas.style.cursor = 'cell';
+            break;
+        default:
+            canvas.style.cursor = 'default';
+    }
+}
+
+function clearCanvas() {
+    if (!paintContext) return;
+    paintContext.fillStyle = 'white';
+    paintContext.fillRect(0, 0, paintContext.canvas.width, paintContext.canvas.height);
+}
+
+function saveCanvas() {
+    const canvas = document.getElementById('paint-canvas');
+    if (!canvas) return;
+    
+    const link = document.createElement('a');
+    link.download = '$DELROY-paint.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+}
+
+function showColorPicker() {
+    // Future color picker implementation
+    alert('Color picker coming soon!');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    setupMinesweeper();
+    
+    const items = document.querySelectorAll('.explorer-item');
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+            items.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+            showExplorerContent(item.textContent.trim());
+        });
+    });
+});
+
+function showExplorerContent(folder) {
+    const main = document.querySelector('.explorer-main');
+    
+    // Sample files for Desktop folder
+    if (folder === 'Desktop') {
+        const files = [
+            {
+                name: 'Document.txt',
+                type: 'text',
+                icon: `<svg viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="2" fill="#f1c40f"/>
+                    <path d="M6 12h12M6 8h12M6 16h8" stroke="white" stroke-width="2"/>
+                </svg>`
+            },
+            {
+                name: 'Image.png', 
+                type: 'image',
+                icon: `<svg viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="2" fill="#2ecc71"/>
+                    <circle cx="8" cy="8" r="2" fill="white"/>
+                    <path d="M2 18l6-6 4 4 6-6 4 4" stroke="white" stroke-width="2" fill="none"/>
+                </svg>`
+            },
+            {
+                name: 'Music.mp3',
+                type: 'audio',
+                icon: `<svg viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="2" fill="#9b59b6"/>
+                    <circle cx="8" cy="16" r="4" stroke="white" stroke-width="2" fill="none"/>
+                    <path d="M8 16V6l12-2v12" stroke="white" stroke-width="2"/>
+                </svg>`
+            },
+            {
+                name: 'Video.mp4',
+                type: 'video', 
+                icon: `<svg viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="2" fill="#e74c3c"/>
+                    <path d="M10 8l6 4-6 4V8z" fill="white"/>
+                </svg>`
+            }
+        ];
+
+        main.innerHTML = `
+            <div class="explorer-grid">
+                ${files.map(file => `
+                    <div class="explorer-file thumbnail">
+                        ${file.icon}
+                        <div class="explorer-file-name">${file.name}</div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+
+    } else {
+        main.innerHTML = `
+            <div class="explorer-empty">
+                <svg viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="2" fill="#ccc"/>
+                    <path d="M12 8v8M8 12h8" stroke="white" stroke-width="2"/>
+                </svg>
+                <div>This folder is empty</div>
+                <div style="font-size: 13px; opacity: 0.7;">Drag and drop files here or use the Add button</div>
+            </div>
+        `;
+    }
+}
+
+function openWindow(id) {
+    if (minimizedWindows.has(id)) {
+        restoreWindow(id);
+        return;
+    }
+    
+    if (aiIntegrationEnabled) {
+        showAIToast(
+            'Opening ' + id + '. Need help? Just ask!',
+            () => toggleAISidebar()
+        );
+    }
+    
+    if (id === 'ai-assistant') {
+        toggleAISidebar();
+        return;
+    }
+    
+    const window = document.getElementById(id);
+    if (!window) return;
+    
+    window.style.display = 'block';
+    window.style.animation = 'windowOpen 0.2s';
+    window.style.opacity = '1';
+    window.style.transform = 'scale(1)';
+    
+    centerWindow(window);
+    
+    makeWindowDraggable(window);
+    
+    if (id === 'control-panel') {
+        // Set current theme in selector when opening control panel
+        const themeSelector = document.getElementById('theme-selector');
+        if (themeSelector) {
+            themeSelector.value = currentTheme;
+        }
+        
+        // Add click handlers for control panel items
+        document.querySelectorAll('.control-panel-item').forEach(item => {
+            item.onclick = () => {
+                const text = item.querySelector('div > div:first-child').textContent;
+                showAIToast(`Opening ${text}...`);
+            };
+        });
+
+        updateProfileContent();
+        window.style.width = '400px';  
+        window.style.height = 'auto';  
+    }
+    if (id === 'paint') {
+        // Reinitialize paint when window opens
+        setTimeout(initializePaint, 0);
+    }
+    if (id === 'explorer') {
+        // Reset to Desktop view when opening
+        const items = document.querySelectorAll('.explorer-item');
+        items.forEach(i => i.classList.remove('active'));
+        items[0].classList.add('active');
+        showExplorerContent('Desktop');
+    }
+}
+
+function centerWindow(window) {
+    const screenWidth = document.documentElement.clientWidth;
+    const screenHeight = document.documentElement.clientHeight;
+    const windowWidth = window.offsetWidth;
+    const windowHeight = window.offsetHeight;
+    
+    window.style.left = Math.max(0, Math.floor((screenWidth - windowWidth) / 2)) + 'px';
+    window.style.top = Math.max(0, Math.floor((screenHeight - windowHeight) / 3)) + 'px';
+}
+
+function makeWindowDraggable(window) {
+    const titleBar = window.querySelector('.title-bar');
+    let isDragging = false;
+    let currentX;
+    let currentY;
+    let initialX;
+    let initialY;
+
+    function dragStart(e) {
+        if (e.target.classList.contains('close-button')) return;
+        initialX = e.clientX - window.offsetLeft;
+        initialY = e.clientY - window.offsetTop;
+        isDragging = true;
+        
+        window.classList.add('dragging');
+    }
+
+    function drag(e) {
+        if (isDragging) {
+            e.preventDefault();
+            currentX = e.clientX - initialX;
+            currentY = e.clientY - initialY;
+
+            const screenWidth = document.documentElement.clientWidth;
+            const screenHeight = document.documentElement.clientHeight;
+            const windowWidth = window.offsetWidth;
+            const windowHeight = window.offsetHeight;
+            currentX = Math.max(0, Math.min(currentX, screenWidth - windowWidth));
+            currentY = Math.max(0, Math.min(currentY, screenHeight - windowHeight));
+
+            window.style.left = currentX + 'px';
+            window.style.top = currentY + 'px';
+        }
+    }
+
+    function dragEnd(e) {
+        initialX = currentX;
+        initialY = currentY;
+        isDragging = false;
+        
+        window.classList.remove('dragging');
+    }
+
+    titleBar.addEventListener('mousedown', dragStart);
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('mouseup', dragEnd);
+    document.addEventListener('mouseleave', dragEnd);
+}
+
+function minimizeWindow(id) {
+    const window = document.getElementById(id);
+    if (!window) return;
+    
+    window.style.animation = 'windowClose 0.2s';
+    minimizedWindows.add(id);
+    
+    window.addEventListener('animationend', () => {
+        window.style.display = 'none';
+        window.style.animation = '';
+        
+        // Add taskbar button if it doesn't exist
+        if (!document.querySelector(`.taskbar-window-button[data-window="${id}"]`)) {
+            const taskbarButton = document.createElement('div');
+            taskbarButton.className = 'taskbar-window-button';
+            taskbarButton.setAttribute('data-window', id);
+            taskbarButton.innerHTML = `
+                <svg width="16" height="16" viewBox="0 0 24 24">
+                    <rect x="2" y="4" width="20" height="16" fill="currentColor" rx="2"/>
+                </svg>
+                ${window.querySelector('.title-bar div:first-child').textContent}
+            `;
+            taskbarButton.onclick = () => restoreWindow(id);
+            
+            // Insert after start button
+            const startButton = document.querySelector('.start-button');
+            startButton.parentNode.insertBefore(taskbarButton, startButton.nextSibling);
+        }
+    }, {once: true});
+}
+
+function restoreWindow(id) {
+    const window = document.getElementById(id);
+    if (!window) return;
+    
+    minimizedWindows.delete(id);
+    window.style.display = 'block';
+    window.style.animation = 'windowOpen 0.2s';
+    
+    // Remove taskbar button
+    const taskbarButton = document.querySelector(`.taskbar-window-button[data-window="${id}"]`);
+    if (taskbarButton) {
+        taskbarButton.remove();
+    }
+}
+</script>
+</body></html>
